@@ -99,3 +99,23 @@ nav a:hover { color: var(--primary); }
 footer { background: #1a1a1a; color: white; padding: 60px 0 20px 0; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; padding-bottom: 40px; }
 .footer-bottom { text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 0.8rem; }
+
+.privacy-notice {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f0f4f8;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+}
+
+.privacy-notice input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.privacy-notice a {
+    color: var(--primary);
+    text-decoration: underline;
+}

@@ -1,71 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>LICAB Fisioterapia</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LICAB Fisioterapia | Recuperación Funcional en Barcelona</title>
+    <!-- Fuentes y Iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-  <h1>LICAB Fisioterapia</h1>
-  <nav>
-    <a href="#sobre">Sobre mí</a>
-    <a href="#tratamientos">Tratamientos</a>
-    <a href="#contacto">Contacto</a>
-    <a class="btn" href="TU_LINK_RESERVA" target="_blank">Reservar cita</a>
-  </nav>
+    <div class="container nav-container">
+        <div class="logo">LICAB<span>Fisioterapia</span></div>
+        <nav>
+            <a href="#sobre">Sobre mí</a>
+            <a href="#tratamientos">Tratamientos</a>
+            <a href="#contacto">Contacto</a>
+            <a class="btn-nav" href="#reserva">Reservar cita</a>
+        </nav>
+    </div>
 </header>
 
 <section class="hero">
-  <h2>Fisioterapia personalizada en Barcelona</h2>
-  <p>Tratamientos individualizados centrados en la recuperación funcional</p>
-  <a class="btn" href="<!-- Google Calendar Appointment Scheduling begin -->
-<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2XTrCWddEaJgsJEPg79zLA_coo40EEr0-ue2dcahUxBSBDdpZVx-xf2ixdfQ2lwGW5abkNfTvt?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
-<!-- end Google Calendar Appointment Scheduling -->" target="_blank">Reservar cita</a>
+    <div class="container hero-content">
+        <h1>Fisioterapia personalizada en Barcelona</h1>
+        <p>Tratamientos individualizados centrados en tu recuperación funcional y bienestar duradero.</p>
+        <div class="hero-btns">
+            <a class="btn-primary" href="#reserva">Pedir Cita Ahora</a>
+            <a class="btn-secondary" href="#tratamientos">Ver Tratamientos</a>
+        </div>
+    </div>
 </section>
 
-<section id="sobre">
-  <h2>Sobre mí</h2>
-  <p>Soy fisioterapeuta especializada en tratamiento individualizado, enfocada en comprender el origen del problema para ofrecer soluciones eficaces y duraderas.</p>
+<section id="sobre" class="container">
+    <div class="section-header">
+        <span class="subtitle">Especialista</span>
+        <h2>Sobre mí</h2>
+    </div>
+    <div class="sobre-grid">
+        <div class="sobre-text">
+            <p>Soy fisioterapeuta especializada en tratamiento individualizado, enfocada en comprender el origen del problema para ofrecer soluciones eficaces y duraderas.</p>
+            <p>Mi enfoque combina la evidencia científica con una atención humana y cercana.</p>
+        </div>
+    </div>
 </section>
 
-<section id="tratamientos">
-  <h2>Tratamientos</h2>
-
-  <div class="grid">
-    <div>
-      <h3>Terapia manual</h3>
-      <p>Tratamiento del dolor musculoesquelético mediante técnicas específicas adaptadas a cada paciente.</p>
+<section id="tratamientos" class="bg-light">
+    <div class="container">
+        <div class="section-header">
+            <span class="subtitle">¿Cómo puedo ayudarte?</span>
+            <h2>Nuestros Tratamientos</h2>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-hands-physic"></i>
+                <h3>Terapia manual</h3>
+                <p>Tratamiento del dolor musculoesquelético mediante técnicas adaptadas.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-lungs"></i>
+                <h3>Fisioterapia respiratoria</h3>
+                <p>Mejora de la función pulmonar y calidad de vida respiratoria.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-running"></i>
+                <h3>Rehabilitación funcional</h3>
+                <p>Recuperación óptima del movimiento tras una lesión o cirugía.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-brain"></i>
+                <h3>Dolor crónico</h3>
+                <p>Abordaje integral del dolor persistente con un enfoque activo.</p>
+            </div>
+        </div>
     </div>
-
-    <div>
-      <h3>Fisioterapia respiratoria</h3>
-      <p>Intervención para mejorar la función pulmonar y la calidad respiratoria.</p>
-    </div>
-
-    <div>
-      <h3>Rehabilitación funcional</h3>
-      <p>Recuperación del movimiento y la funcionalidad tras lesión.</p>
-    </div>
-
-    <div>
-      <h3>Dolor crónico</h3>
-      <p>Abordaje integral del dolor persistente con enfoque activo.</p>
-    </div>
-  </div>
 </section>
 
-<section id="contacto">
-  <h2>Contacto</h2>
-  <p>Barcelona · Carrer Llull</p>
-  <p>Email: fisio.liesa@gmail.com</p>
+<section id="reserva" class="container">
+    <div class="section-header">
+        <h2>Reserva tu sesión</h2>
+        <p>Selecciona el horario que mejor te convenga directamente desde el calendario.</p>
+    </div>
+    <div class="calendar-wrapper">
+        <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2XTrCWddEaJgsJEPg79zLA_coo40EEr0-ue2dcahUxBSBDdpZVx-xf2ixdfQ2lwGW5abkNfTvt?gv=true" style="border: 0" width="100%" height="700" frameborder="0"></iframe>
+    </div>
 </section>
 
-<footer>
-  <p>© LICAB Fisioterapia</p>
+<footer id="contacto">
+    <div class="container footer-grid">
+        <div>
+            <h3>LICAB</h3>
+            <p>Fisioterapia de calidad en el corazón de Barcelona.</p>
+        </div>
+        <div>
+            <h4>Contacto</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Carrer Llull, Barcelona</p>
+            <p><i class="fas fa-envelope"></i> fisio.liesa@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 LICAB Fisioterapia. Todos los derechos reservados.</p>
+    </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

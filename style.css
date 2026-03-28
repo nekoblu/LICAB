@@ -27,6 +27,30 @@
 /* --- Resets Básicos y Tipografía --- */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+.resena-card {
+    background: var(--white);
+    padding: 30px !important;
+    border-top: 4px solid var(--accent) !important;
+}
+
+.stars {
+    color: #ffc107; /* Dorado Google */
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.resena-card p {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    margin-bottom: 15px;
+}
+
+.autor {
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 0.9rem;
+}
 html { scroll-behavior: smooth; font-size: 16px; }
 
 body { 

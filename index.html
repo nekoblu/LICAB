@@ -109,22 +109,34 @@
     
 <section id="reserva" class="container">
     <div class="section-header">
+        <span class="subtitle">Agenda</span>
         <h2>Reserva tu sesión</h2>
-        <p>Selecciona el horario que mejor te convenga directamente desde el calendario.</p>
+        <p>Selecciona el día y hora que mejor te convenga.</p>
     </div>
-    <div class="calendar-wrapper">
+
+    <!-- Contenedor del Calendario con Bloqueo -->
+    <div class="calendar-container" style="position: relative; background: #fff; border-radius: 15px; box-shadow: var(--shadow-lg); overflow: hidden;">
+        
+        <!-- Capa de bloqueo (Se quita al marcar el check) -->
+        <div id="overlay-privacidad" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.9); z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; transition: all 0.5s ease;">
+            <div style="max-width: 400px; background: white; padding: 30px; border-radius: 10px; box-shadow: var(--shadow-md); border-top: 4px solid var(--navy);">
+                <i class="fas fa-user-shield" style="font-size: 2rem; color: var(--navy); margin-bottom: 15px;"></i>
+                <h3 style="color: var(--navy); margin-bottom: 10px;">Protección de Datos</h3>
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">Para acceder a la agenda y gestionar tu cita, por favor acepta nuestra política de privacidad.</p>
+                
+                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; justify-content: center; font-weight: 600;">
+                    <input type="checkbox" id="check-privacidad" style="width: 20px; height: 20px;">
+                    He leído y acepto la <a href="politica-privacidad.html" target="_blank" style="color: var(--accent);">política de privacidad</a>
+                </label>
+            </div>
+        </div>
+
+        <!-- El Calendario Real -->
         <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2XTrCWddEaJgsJEPg79zLA_coo40EEr0-ue2dcahUxBSBDdpZVx-xf2ixdfQ2lwGW5abkNfTvt?gv=true" style="border: 0" width="100%" height="700" frameborder="0"></iframe>
     </div>
-    
-    <div class="privacy-notice">
-        <p>
-            <input type="checkbox" id="privacy" required> 
-            He leído y acepto la <a href="politica-privacidad.html" target="_blank">política de privacidad</a>. 
-            Sus datos serán tratados por LICAB Fisioterapia únicamente para la gestión de su cita médica.
-        </p>
-    </div>
 </section>
-<section id="resenas" class="container bg-light" style="padding: 60px 20px; text-align: center;">
+
+    <section id="resenas" class="container bg-light" style="padding: 60px 20px; text-align: center;">
     
     <div class="section-header" style="margin-bottom: 40px;">
         <span class="subtitle" style="color: #00d2ff; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; font-size: 0.9rem;">Opiniones</span>

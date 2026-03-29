@@ -366,3 +366,29 @@ footer {
     .hero-btns { flex-direction: column; gap: 10px; }
     .btn-primary, .btn-secondary { width: 100%; }
 }
+/* --- Botón Google Directo --- */
+.btn-google-direct {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: transparent;
+    color: #001f4d; /* Tu azul marino */
+    border: 2px solid #001f4d;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-google-direct:hover {
+    background-color: #001f4d;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 31, 77, 0.2);
+}
+
+/* Evitar desplazamientos extraños en la sección */
+#resenas {
+    overflow: hidden;
+    clear: both;
+}

@@ -114,19 +114,49 @@ nav a:hover { color: var(--accent); }
 }
 .btn-nav:hover { background: var(--accent); transform: translateY(-2px); box-shadow: var(--shadow-md); }
 
-/* --- Hero Section Alineada a la Izquierda --- */
+/* --- Ajuste Definitivo Hero a la Izquierda --- */
 .hero {
     background: 
-        linear-gradient(90deg, rgba(0, 31, 77, 0.7) 0%, rgba(0, 31, 77, 0.2) 60%, transparent 100%), 
+        linear-gradient(90deg, rgba(0, 31, 77, 0.8) 0%, rgba(0, 31, 77, 0.2) 60%, transparent 100%), 
         url('hero-licab.png') center/cover no-repeat;
     height: 100vh;
     display: flex; 
     align-items: center; 
-    justify-content: flex-start; /* Empuja el contenido al inicio (izquierda) */
-    text-align: left; /* Alinea el texto a la izquierda */
+    justify-content: flex-start; /* Alinea al inicio del eje principal */
+    text-align: left;
     color: white;
-    background-attachment: fixed;
     margin-top: 0;
+}
+
+.hero-content-left {
+    max-width: 600px;
+    margin-left: 5%;      /* Separación del borde izquierdo */
+    margin-right: auto;   /* Esto empuja todo el bloque hacia la izquierda */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los hijos (h1, p, btns) a la izquierda */
+}
+
+.hero-btns {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start; /* Asegura que los botones no se centren */
+    width: 100%;
+}
+
+/* Re-ajuste para móviles (aquí sí es mejor centrar por legibilidad) */
+@media (max-width: 768px) {
+    .hero-content-left {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .hero-btns {
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 .hero-content {

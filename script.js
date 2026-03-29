@@ -20,3 +20,26 @@ document.querySelectorAll('.card').forEach(card => {
     card.style.transition = "all 0.6s ease-out";
     observer.observe(card);
 });
+// Validación de Privacidad mejorada
+const checkPrivacidad = document.getElementById('check-privacidad');
+const calendarioDiv = document.getElementById('calendario-real');
+const avisoClick = document.getElementById('aviso-click');
+const privacidadWrapper = document.getElementById('privacidad-wrapper');
+
+if (checkPrivacidad) {
+    checkPrivacidad.addEventListener('change', function() {
+        if (this.checked) {
+            // Mostramos el calendario y ocultamos los avisos
+            calendarioDiv.style.display = 'block';
+            avisoClick.style.display = 'none';
+            privacidadWrapper.style.backgroundColor = '#e8f5e9'; // Cambia a verde suave al aceptar
+            privacidadWrapper.style.borderColor = '#4caf50';
+        } else {
+            // Si lo desmarcan, se vuelve a ocultar
+            calendarioDiv.style.display = 'none';
+            avisoClick.style.display = 'block';
+            privacidadWrapper.style.backgroundColor = '#f4f7f6';
+            privacidadWrapper.style.borderColor = '#ddd';
+        }
+    });
+}
